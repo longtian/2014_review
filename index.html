@@ -9,6 +9,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>2014 review</title>
+    <style type="text/css">
+        p{
+            font-weight: bold;
+        }
+        a{
+            font-weight: normal;
+            display: block;
+        }
+    </style>
   </head>
 
   <body>
@@ -123,6 +132,13 @@
             } catch(err) {}
           </script>
 
+          <script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
+          <script type="text/javascript">
+              function fixLinks(){
+                  $("#main_content a").attr("target","_blank");
+              }
+              fixLinks();
+          </script>
 
   </body>
 </html>
