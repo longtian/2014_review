@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>2014 review</title>
+    <title>Programer's Year in Review 2014</title>
     <style type="text/css">
         p{
             font-weight: bold;
@@ -27,22 +27,15 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/wyvernnot/2014_review">View on GitHub</a>
 
-          <h1 id="project_title">2014 review</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/wyvernnot/2014_review/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/wyvernnot/2014_review/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+          <h1 id="project_title">Programer's Year in Review 2014</h1>
+          <h2 id="project_tagline">程序员年终总结</h2>
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a id="2014年度总结" class="anchor" href="#2014%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>2014年度总结</h3>
-
+          
 <p>Fenng 丁香
 <a href="http://dbanotes.net/review/2014_personal_review.html">http://dbanotes.net/review/2014_personal_review.html</a></p>
 
@@ -106,17 +99,14 @@
 <p>徐文浩
 <a href="http://www.xuwenhao.com/2015/01/03/review-of-2014/">http://www.xuwenhao.com/2015/01/03/review-of-2014/</a></p>
 
-<h3>
-<a id="如何贡献" class="anchor" href="#%E5%A6%82%E4%BD%95%E8%B4%A1%E7%8C%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>如何贡献</h3>
-
-<p>欢迎投稿2014的程序员年终总结，请发Pull Request给我:)</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">2014 review maintained by <a href="https://github.com/wyvernnot">wyvernnot</a></p>
+        <p>Pull Request is welcomed :)</p>
+        <p class="copyright">Maintained by <a href="https://github.com/wyvernnot">龙天</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
@@ -136,6 +126,17 @@
           <script type="text/javascript">
               function fixLinks(){
                   $("#main_content a").attr("target","_blank");
+                  $("#main_content p").detach().sort(function(a,b){
+                      a=$(a).text().toLowerCase();
+                      b=$(b).text().toLowerCase();
+                      if(a>b){
+                          return 1;
+                      }else if(a<b){
+                          return -1;
+                      }else{
+                          return 0;
+                      }
+                  }).appendTo("#main_content");
               }
               fixLinks();
           </script>
